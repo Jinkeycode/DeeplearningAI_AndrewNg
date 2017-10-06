@@ -3,6 +3,7 @@ Deep Learning Specialization by Andrew Ng on Coursera.
 
 # Warning
 Finished by Jinkey, you can reference from my code，but please don't submit my code to coursera in order to get your own certification.
+
 你可以参考我的代码，但请不要把我的代码提交到 Coursera 以获得你的证书。我的代码并非按照课程的代码风格和规范编写。
 
 # My Environment
