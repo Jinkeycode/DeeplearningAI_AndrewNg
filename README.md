@@ -21,3 +21,6 @@ Course 1: Neural Networks and Deep Learning
 - Week 3 - PA 2 - Planar data classification with one hidden layer
 - Week 4 - PA 3 - Building your Deep Neural Network: Step by Step¶
 - Week 4 - PA 4 - Deep Neural Network for Image Classification: Application
+
+# Recommendation
+[DeeplearningBook](http://www.deeplearningbook.org/) and its chinese version [深度学习中文版](https://github.com/exacity/deeplearningbook-chinese) 
