@@ -117,19 +117,6 @@ class LogisticRegression:
 
         return Y_prediction
 
-    def pro_test(self):
-        w, b, X, Y = np.array([[1], [2], [2]]), 2, np.array([[1, 2], [3, 4], [3, 4]]), np.array([[1, 0, 1]])
-
-        m = X.shape[1]
-        Z = np.dot(w.T, X) + b
-        A = self.__sigmoid(Z)
-        print A
-        cost_array = np.dot(Y, np.log(A).T) + np.dot(1 - Y, np.log(1 - A).T)
-        cost = (- 1.0 / m) * np.sum(cost_array)
-        dw = (1.0 / m) * np.dot(X, (A - Y).T)
-        db = (1.0 / m) * np.sum(A - Y)
-        print(dw, db, cost)
-
 if __name__ == '__main__':
     # LogisticRegression().faltten_x().standardize_x().train(epoch=1500, learning_rate=0.005) # 17396.483413 s
     LogisticRegression().show_data_info().load_weight().predict()
@@ -137,4 +124,3 @@ if __name__ == '__main__':
     prob = np.squeeze(LogisticRegression().predict_image("images/ cat.jpg"))
     print prob
     print("这%s一只猫" % ("是" if prob> 0.5 else "不是"))
-    # LogisticRegression().pro_test()
