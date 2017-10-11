@@ -1,6 +1,11 @@
 # -*- coding: utf-8 -*-
 __author__ = 'Jinkey'
 
+'''
+遇到的坑：
+本脚本在 Python2 下运行，Int/Int = Int； 而 课程作业是在 Python3 下运行 Int/Int = Float。因此，我在做 像素值/255 和计算 1/样本数的时候有可能得到整型的矩阵，写成 像素值/255.0 和 1.0/样本数之后得到的结果就正确了。
+'''
+
 import numpy as np
 import matplotlib.pyplot as plt
 import h5py
